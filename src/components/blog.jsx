@@ -19,7 +19,7 @@ const Blog =({ className, refreshKey })=>{
     
     const fetchBlog = async()=>{
         try {
-            const response = await axios.get(`https://fb4fe92e-e9e9-4a61-b83b-d78fa510d666-00-3452oz38tloip.pike.replit.dev/api/auth/dashboard?page=${currentPage}&limit=4`);
+            const response = await axios.get(`https://fb4fe92e-e9e9-4a61-b83b-d78fa510d666-00-3452oz38tloip.pike.replit.dev:3000/api/auth/dashboard?page=${currentPage}&limit=4`);
             setBlogs(response.data.data);
             setTotalPages(response.data.totalPages);
         } catch (error) {
@@ -29,7 +29,7 @@ const Blog =({ className, refreshKey })=>{
 
     const fetchItem = async()=>{
         try {
-            const ressponse = await axios.get(`https://fb4fe92e-e9e9-4a61-b83b-d78fa510d666-00-3452oz38tloip.pike.replit.dev/api/auth/dashboard?page=${currentPage}&limit=4`);
+            const ressponse = await axios.get(`https://fb4fe92e-e9e9-4a61-b83b-d78fa510d666-00-3452oz38tloip.pike.replit.dev:3000/api/auth/dashboard?page=${currentPage}&limit=4`);
             setItems(ressponse.data.data);
         } catch (error) {
             console.error('error menampilkan item', error);
