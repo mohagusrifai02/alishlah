@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container_dashboard{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.container_dashboard .form-input{
+    width: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+}
+.container_dashboard .form-input form{
+    width: 100%;
+}
+.container_dashboard .form-input form ul{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    line-height: 2;
+    gap: 10px;
+}
+.container_dashboard .form-input form ul li{
+    width: 100%;
+    display: flex;
+}
+.container_dashboard .form-input form ul li label{
+    width: 20%;
+}
+.container_dashboard .form-input form ul li input, form ul li textarea{
+    width: 80%;
+}
+.container_dashboard .form-input form ul li textarea{
+    height: 50vh;
+}
+.blog-dashboard{
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 150px;
+}
+.blog-dashboard table{
+    width: 100%;
+    background-color: #ffffff;
+}
+.blog-dashboard table thead{
+    text-align: left;
+    height: 50px;
+    background-color: salmon;
+    color: #ffffff;
+}
+.blog-dashboard table tr td{
+    border-bottom: 1px solid lightgray;
+}
+.blog-dashboard table tr .gambar{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.blog-dashboard table tr td button{
+    background-color: rgb(197, 4, 4);
+    color: #ffffff;
+    padding: 3px 7px;
+    border: none;
+    border-radius: 3px;
+}
+@media screen and (max-width:600px){
+    .container_dashboard{
+        flex-direction: column;
+    }
+    .container_dashboard .form-input{
+        width: 100%;
+        position: static;
+    }
+    .container_dashboard .form-input form ul{
+        margin-top: 50px;
+    }
+    .container_dashboard .blog-dashboard{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .blog-dashboard {
+        margin-top: 0;
+    }
+}
