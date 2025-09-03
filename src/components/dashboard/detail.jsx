@@ -55,17 +55,15 @@ const Detail = ()=>{
                         <div className="sub-deskripsi">
                             <h4>{ blog.kategori }</h4>
                             <h4>Penulis</h4>
+                            <a
+                                href={`https://fb4fe92e-e9e9-4a61-b83b-d78fa510d666-00-3452oz38tloip.pike.replit.dev:3000/${blog.slug}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="share-whatsapp"
+                            >
+                                Bagikan ke WhatsApp
+                            </a>
                         </div>
-                    </li>
-                    <li>
-                        <a
-                            href={`https://fb4fe92e-e9e9-4a61-b83b-d78fa510d666-00-3452oz38tloip.pike.replit.dev:3000/${blog.slug}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="share-whatsapp"
-                        >
-                            Bagikan ke WhatsApp
-                        </a>
                     </li>
                     <li>
                         <p>{ blog.paragraf }</p>
