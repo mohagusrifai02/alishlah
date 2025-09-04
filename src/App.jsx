@@ -16,7 +16,7 @@ function App() {
 
   return (
    <>
-    <BrowserRouter basename="/alishlah">
+    <BrowserRouter>
       <Nav />
       <Routes>
         <Route path="/" element={<Home/>}/>
